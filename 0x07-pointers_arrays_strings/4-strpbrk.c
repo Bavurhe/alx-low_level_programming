@@ -4,6 +4,7 @@
  * _strpbrk - Entry point
  * @s: input
  * @accept: input
+ *
  * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
@@ -14,7 +15,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (k = 0; accept[k]; k++)
 		{
-			if(*s == accept[k])
+			if (*s == accept[k])
 				return (s);
 		}
 		s++;
